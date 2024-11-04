@@ -1,3 +1,4 @@
+// Shows "404: Page Not Found" message
 const ErrorPage = () => {
   return (
     <section>

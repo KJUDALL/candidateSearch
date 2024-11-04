@@ -1,3 +1,4 @@
+//  Fetches and displays saved candidates from local storage
 const SavedCandidates = () => {
   return (
     <>
