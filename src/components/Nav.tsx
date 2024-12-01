@@ -1,19 +1,17 @@
 // Link to Candidate Search Room (CandidateSearch.tsx)
 // Link to Saved Candidates Room (SavedCandidates.tsx)
-
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
-  // TODO: Add necessary code to display the navigation bar and link between the pages
+  // DONE: Add necessary code to display the navigation bar and link between the pages
   return (
     <nav>
       <ul>
           <li>
-          <Link to='/'>Home</Link>
+          <Link to='/'>Candidate Search</Link>
         </li>
         <li>
-          <Link to='/SavedCandidates'>Potential Candidates</Link>
+          <Link to='/SavedCandidates'>Saved Candidates</Link>
           </li>
       </ul>
     </nav>

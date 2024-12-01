@@ -1,8 +1,8 @@
 // |-- Fetches and displays candidates from GitHub
 import { useState, useEffect } from 'react';
 import { searchGithub, searchGithubUser } from '../api/API';
-import { Candidate } from '../Candidate.interface';
-import { json } from 'react-router-dom';
+import { Candidate } from '../interfaces/Candidate.interface.tsx';
+// import { json } from 'react-router-dom';
 
 const CandidateSearch = () => {
   const [candidates, setCandidate] = useState<Candidate[]>([]);
@@ -18,6 +18,11 @@ const CandidateSearch = () => {
   const saveCandidate = (candidate: Candidate) => {
     const savedCandidates = JSON.parse(localStorage.getItem('savedCandidates') || '[]');
     localStorage.setItem('savedCandidates', JSON.stringify([...savedCandidates, candidate]));
+  };
+
+  const fetchUsername = async (username: string) => {
+    const userDetails = await searchGithubUser(username);
+    setCandidate(userDetails);
   };
   
   return (
@@ -35,6 +40,7 @@ const CandidateSearch = () => {
             <p>Email: {candidate.email}</p>
             <p>Company: {candidate.company}</p>
             <button onClick={() => saveCandidate(candidate)}>Save</button>
+            <button onClick={() => fetchUsername(candidate.login)}>View Details</button>
           </li>
         ))}
       </ul>
