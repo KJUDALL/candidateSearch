@@ -1,35 +1,35 @@
-# React + TypeScript + Vite
+# Candidate Search
 
-THIS README FILE IS ALL STARTER CODE. I DID NOT CREATE ANY OF IT. 
+## Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Are you an employer looking for an easy, yet enjoyable way to find your next hire? This web application is the perfect choice for you. It's a combination of LinkedIn and Tinder - what a unique duo. Being able to quickly visualize a user's profile, and either "accepting" or "denying" it provides for a seamless and speedy way to recruit candidates.
 
-Currently, two official plugins are available:
+The backend of this code utilizes components, interfaces, and pages to provide a well organized project structure. ESLint is installed to improve code readability, and vite config ensures the frontend can be built out seamlessly. This project was coded in TypeScript to ensure bug-free code. The main.tsx file imports all the necessary page components, and the App.tsx file is the main entry point for all of it.
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Description](#description)
+- [Deployment Link](#deployment)
+- [Installation](#installation)
+- [License](#license)
+- [Questions](#questions)
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Deployment Link
 
-* Configure the top-level `parserOptions` property as follows:
+This app is being deployed publicly via Render. If you would like to simply view the functionality of the app without building it locally, you can do so at this link: https://kanbanboard-ondi.onrender.com.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+Users can clone this code repo using an IDE of choice. Users must ensure ESLint, dotenv, and npm are all installed. Because this code base uses TypeScript, be mindful of the npm scripts used to run and build this app in package.json at the root level. Npm run dev will spin up a live localhost link. This app will also be deployed on Render.
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+It should be noted that I was given starter code by means of the school. From there, I completed the noted "TODO" sections, and implemented pieces of the backend structure for overall functionality.
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+    This project is licensed under the MIT license. For more info, see [this link](https://opensource.org/licenses/MIT).
+
+## Questions
+
+If any questions come up in the future, you can contact me directly at myemail@gmail.com. If you would like to view this repo, or check out any of my other work, visit my GitHub at [kjudall](https://github.com/kjudall/).
